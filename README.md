@@ -32,6 +32,18 @@ Momo-Analyst is a comprehensive tool for analyzing mobile money transactions. It
     ./prepare_me.sh
     ```
 
+3. Create a .env file:
+    ``` touch .env
+    ```
+
+4. In the .env include your for Database Connections
+    ``` MYSQL_HOST=
+        MYSQL_USER=
+        MYSQL_PASSWD=
+        DB=```
+5. Update the create user and database credentials in prepare.sql
+
+
 
 ## Usage
 
