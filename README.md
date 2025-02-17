@@ -19,6 +19,10 @@ Momo-Analyst is a comprehensive tool for analyzing mobile money transactions. It
 - **Search and Filter**: Search and filter transactions based on various criteria.
 - **User-Friendly Interface**: Easy-to-use interface with navigation and alerts.
 
+## Project Architecture Overview
+
+![Alt text](/images/Overview.png)
+
 ## Installation
 
 1. Clone the repository:
@@ -80,16 +84,67 @@ to upload
 
 - Returns the Json Cleaned Data from the Database in the below format
 
-"data":{
-    "airtime":{
-        TxId: ...,
-        Amount: ...
-    },
-    "bundles":{
-        TxId: ...,
-        AMOUNT: ...,
-    },
-    ...
+{
+    "data": {
+        "airtime": [
+            {
+                "TxId": "12345",
+                "Amount": 50.00,
+                "Date": "2025-02-17",
+                ...
+            },
+            {
+                "TxId": "12346",
+                "Amount": 30.00,
+                "Date": "2025-02-16",
+                ...
+            }
+        ],
+        "bundles": [
+            {
+                "TxId": "22345",
+                "Amount": 100.00,
+                "Date": "2025-02-17",
+                ...
+            },
+            {
+                "TxId": "22346",
+                "Amount": 200.00,
+                "Date": "2025-02-16",
+                ....
+            }
+        ],
+        "cashpower": [
+            {
+                "Token":151513513515
+                "TxId": "32345",
+                "Amount": 500.00,
+                "Date": "2025-02-17",
+                ...
+            },
+            {
+                "Token": 12313213
+                "TxId": "32346",
+                "Amount": 300.00,
+                "Date": "2025-02-16",
+                ...
+            }
+        ],
+        "payments": [
+            {
+                "TxId": "42345",
+                "Amount": 10.00,
+                "Date": "2025-02-17",
+                ...
+            },
+            {
+                "TxId": "42346",
+                "Amount": 5.00,
+                "Date": "2025-02-16",
+                ...
+            }
+        ]
+    }
 }
 
 ## REPORT SAMPLE
