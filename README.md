@@ -50,7 +50,6 @@ Momo-Analyst is a comprehensive tool for analyzing mobile money transactions. It
 1. Start the application:
     ```
     python3 api.py
-    start the 
     ```
 
 2. Upload transaction files in XML format through the "Add File" section.
@@ -64,3 +63,31 @@ Momo-Analyst is a comprehensive tool for analyzing mobile money transactions. It
 ![Alt text](/images/4.png)
 ![Alt text](/images/5.png)
 ![Alt text](/images/6.png)
+
+## API DOCUMENTATION
+### Endpoints
+### Base URL
+
+#### 1. Uploading a file
+
+
+##### POST /file
+
+- this API uploads the content file of the xml, which is strictly the file format
+to upload
+
+##### GET /database_return
+
+- Returns the Json Cleaned Data from the Database in the below format
+
+"data":{
+    "airtime":{
+        TxId: ...,
+        Amount: ...
+    },
+    "bundles":{
+        TxId: ...,
+        AMOUNT: ...,
+    },
+    ...
+}
