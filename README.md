@@ -91,3 +91,6 @@ to upload
     },
     ...
 }
+
+## REPORT SAMPLE
+![Alt text](/images/report.png)
